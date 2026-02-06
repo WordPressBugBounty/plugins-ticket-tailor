@@ -1,13 +1,20 @@
 <?php
 /*
-Plugin Name: Ticket Tailor - Sell Tickets Online
-Plugin URI: http://www.tickettailor.com/
-Description: Embed your Ticket Tailor box office to sell tickets online via your Wordpress website.
+Plugin Name: Ticket Tailor — Event Ticketing & Registration
+Plugin URI: https://www.tickettailor.com/
+Description: Embed your Ticket Tailor box office to sell tickets online via your WordPress website.
 Author: Zimma Ltd.
-Version: 1.12
-Author URI: http://www.tickettailor.com/
-Tested up to: 6.4.3
+Version: 1.13
+Author URI: https://www.tickettailor.com/
+Tested up to: 6.9
+Requires at least: 2.8
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ticket-tailor
 */
+
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 register_activation_hook(__FILE__, 'tickettailor_activate');
 add_action('admin_init', 'tickettailor_redirect');
@@ -68,7 +75,7 @@ function ticket_tailor_box_office_menu() {
 
 function ticket_tailor_box_office_options() {
     if ( !current_user_can( 'manage_options' ) )  {
-        wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+        wp_die( __( 'You do not have sufficient permissions to access this page.', 'ticket-tailor' ) );
     }
     ?>
     <div class="wrap">

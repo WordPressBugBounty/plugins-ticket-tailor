@@ -1,10 +1,11 @@
-=== Sell Tickets - Event Ticketing and Event Registration - Ticket Tailor for WordPress ===
+=== Ticket Tailor — Event Ticketing & Registration ===
 Contributors: tickettailor
-Tags: ticketing system, sell tickets, event ticketing, sell event tickets, ticketing, event ticketing widget, ticket, event registration, event management, event, events, tickets, ticket shop, e-tickets, box office, event payment, paypal, stripe, events, eventbrite, conference registration, booking system, ticket sales, wordpress ticket sales, wordpress booking system, wordpress online booking, wordpress events, wordpress ticketing system, sell tickets online, online box office, event ticketing system, attendance, attendee, Booking, calendar, event, event calendar, events calendar, event widget, payments, paypal, registration, booking, ticket, tickets, widget, plugin, eventbrite alternative, stripe ticketing, paypal event ticketing
+Tags: ticketing, events, event-ticketing, ticket-sales, event-registration
 Requires at least: 2.8
-Tested up to: 6.0
-Stable tag: 1.10
+Tested up to: 6.9
+Stable tag: 1.13
 License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Sell event tickets online via your WordPress website. Ticket Tailor is an easy event ticketing & event registration system.
 
@@ -181,7 +182,16 @@ Already looking forward to using their system again.
 
 == Changelog ==
 
-1.10
+= 1.13 =
+
+* Updated plugin name to comply with WordPress plugin guidelines
+* Added GPL license declaration in plugin header
+* Added security check to prevent direct file access
+* Fixed internationalization to properly support translations
+* Tested and confirmed compatibility with WordPress 6.9
+* Updated stable tag and version numbering
+
+= 1.10 =
 
 * Support for latest versions of WordPress
 
