@@ -4,9 +4,9 @@ Plugin Name: Ticket Tailor — Event Ticketing & Registration
 Plugin URI: https://www.tickettailor.com/
 Description: Embed your Ticket Tailor box office to sell tickets online via your WordPress website.
 Author: Zimma Ltd.
-Version: 1.13
+Version: 1.14
 Author URI: https://www.tickettailor.com/
-Tested up to: 6.9
+Tested up to: 7.1
 Requires at least: 2.8
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -48,6 +48,7 @@ function tt_event_load($atts) {
 
     if(isset($atts['minimal'])) $minimal = $atts['minimal'];
     if(isset($atts['bg_fill'])) $bg_fill = $atts['bg_fill'];
+    if(isset($atts['show_logo'])) $show_logo = $atts['show_logo'];
     if(isset($atts['inherit_ref_from_url_param'])) $inherit_ref_from_url_param = $atts['inherit_ref_from_url_param'];
     if(isset($atts['ref'])) $ref = $atts['ref'];
 

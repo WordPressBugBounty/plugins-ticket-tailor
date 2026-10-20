@@ -2,8 +2,8 @@
 Contributors: tickettailor
 Tags: ticketing, events, event-ticketing, ticket-sales, event-registration
 Requires at least: 2.8
-Tested up to: 6.9
-Stable tag: 1.13
+Tested up to: 7.1
+Stable tag: 1.14
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -181,6 +181,11 @@ Already looking forward to using their system again.
 5. Mobile app for ticket check-in. Scan in attendees at your event. Available on iPhone and Android.
 
 == Changelog ==
+
+= 1.14 =
+
+* Fixed the show_logo shortcode option being ignored, so the logo or box office name no longer shows when it is turned off
+* Tested and confirmed compatibility with WordPress 7.1
 
 = 1.13 =
 
